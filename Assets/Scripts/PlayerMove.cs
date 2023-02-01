@@ -12,6 +12,8 @@ public class PlayerMove : MonoBehaviour
     private Vector3 moveDir;
 
     [SerializeField] private float speedValue = 5f;
+    [SerializeField] private float gravity = 0.08f;
+    [SerializeField] private float jumpValue = 1f;
     void Start()
     {
         player = GetComponent<CharacterController>();
@@ -30,8 +32,12 @@ public class PlayerMove : MonoBehaviour
         {
             moveDir = new Vector3(button_x, 0f, button_z);
             moveDir = transform.TransformDirection(moveDir);
+            if (Input.GetKey(KeyCode.Space))
+            {
+                moveDir.y += jumpValue;
+            }
         }
-        moveDir.y -= 1;
+        moveDir.y -= gravity;
         //gameObject.transform.position += (moveDir*Time.deltaTime*speedValue);
         player.Move(moveDir * Time.deltaTime * speedValue);
     }
