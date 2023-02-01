@@ -18,6 +18,7 @@ public class Rotation : MonoBehaviour
     void Start()
     {
         Cursor.lockState = CursorLockMode.Confined;
+        Cursor.visible = false;
         cam = Camera.main;
         
     }
@@ -38,7 +39,7 @@ public class Rotation : MonoBehaviour
         mouseYCurr = Mathf.SmoothDamp(mouseY, mouseYCurr, ref CurVelosityY, smoothTime);
 
         //mouseXCurr = Mathf.Clamp(mouseXCurr, -8f, 80f);
-        mouseYCurr = Mathf.Clamp(mouseYCurr, -30f, 30f);
+        mouseYCurr = Mathf.Clamp(mouseYCurr, -50f, 50f);
 
         cam.transform.rotation = Quaternion.Euler(-mouseYCurr, mouseXCurr, 0f);
         gameObject.transform.rotation = Quaternion.Euler(0f, mouseXCurr, 0f);

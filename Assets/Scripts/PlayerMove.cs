@@ -13,7 +13,8 @@ public class PlayerMove : MonoBehaviour
 
     [SerializeField] private float speedValue = 5f;
     [SerializeField] private float gravity = 0.08f;
-    [SerializeField] private float jumpValue = 1f;
+    [SerializeField] private float jumpValue = 1.5f;
+    [SerializeField] private float heightSit = 1.5f;
     void Start()
     {
         player = GetComponent<CharacterController>();
@@ -36,6 +37,12 @@ public class PlayerMove : MonoBehaviour
             {
                 moveDir.y += jumpValue;
             }
+            if (Input.GetKey(KeyCode.LeftControl))
+            {
+                player.height = heightSit;
+            }
+            else
+                player.height = 2.0f;
         }
         moveDir.y -= gravity;
         //gameObject.transform.position += (moveDir*Time.deltaTime*speedValue);
