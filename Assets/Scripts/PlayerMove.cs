@@ -27,26 +27,30 @@ public class PlayerMove : MonoBehaviour
     }
     void Move()
     {
-        button_x = Input.GetAxis("Horizontal");
-        button_z = Input.GetAxis("Vertical");
-        if (player.isGrounded)
+        if (Time.timeScale == 1f)
         {
-            moveDir = new Vector3(button_x, 0f, button_z);
-            moveDir = transform.TransformDirection(moveDir);
-            if (Input.GetKey(KeyCode.Space))
+            button_x = Input.GetAxis("Horizontal");
+            button_z = Input.GetAxis("Vertical");
+            if (player.isGrounded)
             {
-                moveDir.y += jumpValue;
+                moveDir = new Vector3(button_x, 0f, button_z);
+                moveDir = transform.TransformDirection(moveDir);
+                if (Input.GetKey(KeyCode.Space))
+                {
+                    moveDir.y += jumpValue;
+                }
+                if (Input.GetKey(KeyCode.LeftControl))
+                {
+                    player.height = heightSit;
+                }
+                else
+                    player.height = 2.0f;
             }
-            if (Input.GetKey(KeyCode.LeftControl))
-            {
-                player.height = heightSit;
-            }
-            else
-                player.height = 2.0f;
+            moveDir.y -= gravity;
+            //gameObject.transform.position += (moveDir*Time.deltaTime*speedValue);
+            player.Move(moveDir * Time.deltaTime * speedValue);
+
         }
-        moveDir.y -= gravity;
-        //gameObject.transform.position += (moveDir*Time.deltaTime*speedValue);
-        player.Move(moveDir * Time.deltaTime * speedValue);
     }
 
 }

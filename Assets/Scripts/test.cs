@@ -7,15 +7,25 @@ public class test : MonoBehaviour
     // Start is called before the first frame update
 
     public int  a;
+    public string color;    // заданный цвет для куба
+    public GameObject V;    // куб, у которого меняется цвет
     
     void Start()
     {
-        a = 9;
-        if (a >= 10 && a++ <= 99)
+        var t = V.GetComponent<Renderer>();
+        if (color == "red")
         {
-            Debug.Log("Двузначное число");
+            t.material.color = Color.red;
         }
-        Debug.Log(a);
+        else if (color == "blue")
+        {
+            t.material.color = Color.blue;
+        }
+        else if (color == "black")
+        {
+            t.material.color = Color.black;
+        }
+        // и другие цвета ...
     }
 
     // Update is called once per frame

@@ -32,16 +32,20 @@ public class Rotation : MonoBehaviour
 
     private void NewMethod()
     {
-        mouseX += Input.GetAxis("Mouse X") * Sensitivity;
-        mouseY += Input.GetAxis("Mouse Y") * Sensitivity;
+        if (Time.timeScale == 1f)
+        {
+            mouseX += Input.GetAxis("Mouse X") * Sensitivity;
+            mouseY += Input.GetAxis("Mouse Y") * Sensitivity;
 
-        mouseXCurr = Mathf.SmoothDamp(mouseX, mouseXCurr, ref CurVelosityX, smoothTime);
-        mouseYCurr = Mathf.SmoothDamp(mouseY, mouseYCurr, ref CurVelosityY, smoothTime);
+            mouseXCurr = Mathf.SmoothDamp(mouseX, mouseXCurr, ref CurVelosityX, smoothTime);
+            mouseYCurr = Mathf.SmoothDamp(mouseY, mouseYCurr, ref CurVelosityY, smoothTime);
 
-        //mouseXCurr = Mathf.Clamp(mouseXCurr, -8f, 80f);
-        mouseYCurr = Mathf.Clamp(mouseYCurr, -50f, 50f);
+            //mouseXCurr = Mathf.Clamp(mouseXCurr, -8f, 80f);
+            mouseYCurr = Mathf.Clamp(mouseYCurr, -50f, 50f);
 
-        cam.transform.rotation = Quaternion.Euler(-mouseYCurr, mouseXCurr, 0f);
-        gameObject.transform.rotation = Quaternion.Euler(0f, mouseXCurr, 0f);
+            cam.transform.rotation = Quaternion.Euler(-mouseYCurr, mouseXCurr, 0f);
+            gameObject.transform.rotation = Quaternion.Euler(0f, mouseXCurr, 0f);
+
+        }
     }
 }

@@ -57,10 +57,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Rotator.cs" />
+    <Compile Include="Assets\Scripts\LoopTiles.cs" />
     <Compile Include="Assets\Scripts\test.cs" />
+    <Compile Include="Assets\Scripts\Loop_1.cs" />
+    <Compile Include="Assets\Scripts\Properties.cs" />
     <Compile Include="Assets\Scripts\PlayerMove.cs" />
     <Compile Include="Assets\Scripts\Rotation.cs" />
-    <Compile Include="Assets\Scripts\Properties.cs" />
+    <Compile Include="Assets\Scripts\LoopPosition.cs" />
+    <Compile Include="Assets\Scripts\PauseMenu.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -650,6 +654,9 @@
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
