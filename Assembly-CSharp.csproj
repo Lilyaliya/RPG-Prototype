@@ -60,11 +60,12 @@
     <Compile Include="Assets\Scripts\LoopTiles.cs" />
     <Compile Include="Assets\Scripts\test.cs" />
     <Compile Include="Assets\Scripts\Loop_1.cs" />
+    <Compile Include="Assets\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\Properties.cs" />
     <Compile Include="Assets\Scripts\PlayerMove.cs" />
     <Compile Include="Assets\Scripts\Rotation.cs" />
     <Compile Include="Assets\Scripts\LoopPosition.cs" />
-    <Compile Include="Assets\Scripts\PauseMenu.cs" />
+    <Compile Include="Assets\Scripts\Interactive.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
