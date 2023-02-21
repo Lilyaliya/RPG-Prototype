@@ -9,6 +9,7 @@ public class Interactive : MonoBehaviour
     Ray ray;
     RaycastHit obj;
     [SerializeField] float maxDistance;
+    [SerializeField] Text text;
     private void Start()
     {
         cam = Camera.main;
@@ -29,10 +30,12 @@ public class Interactive : MonoBehaviour
         if (Physics.Raycast(ray,out obj, maxDistance))
         {
             Debug.DrawRay(ray.origin, ray.direction*maxDistance, color: Color.blue);
+            text.enabled = true;
         }
         if (obj.transform==null)
         {
             Debug.DrawRay(ray.origin, ray.direction, color: Color.red);
+            text.enabled = false;
         }
     }
 }
