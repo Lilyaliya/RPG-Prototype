@@ -64,9 +64,10 @@
     <Compile Include="Assets\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\Properties.cs" />
     <Compile Include="Assets\Scripts\PlayerMove.cs" />
+    <Compile Include="Assets\Scripts\MovePlatform.cs" />
     <Compile Include="Assets\Scripts\Rotation.cs" />
     <Compile Include="Assets\Scripts\LoopPosition.cs" />
-    <Compile Include="Assets\Scripts\MovePlatform.cs" />
+    <Compile Include="Assets\Scripts\UseGravity.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
