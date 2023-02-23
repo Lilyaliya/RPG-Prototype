@@ -12,6 +12,7 @@ public class MovePlatform : MonoBehaviour
     BoxCollider _platform;
     bool _collision;
     RaycastHit aim;
+    RaycastHit aimPrev;
     bool direction; // if true we move to the endPoint. Else to the startPoint
     void Start()
     {
@@ -20,8 +21,8 @@ public class MovePlatform : MonoBehaviour
         _platform = GetComponent<BoxCollider>();
     }
 
-    // Update is called once per frame
-    void Update()
+
+    private void FixedUpdate()
     {
         if (direction)
         {
@@ -31,21 +32,21 @@ public class MovePlatform : MonoBehaviour
         {
             MoveLeft();
         }
-    }
-    private void FixedUpdate()
-    {
-        
-        _collision = Physics.BoxCast(_platform.bounds.center, transform.GetChild(0).localScale, transform.up, out aim, transform.rotation, 0.1f);
+        _collision = Physics.BoxCast(_platform.bounds.center, transform.GetChild(0).localScale, transform.up, out aim, transform.rotation, 0.2f);
         if (_collision)
         {
             //aim.collider.transform.parent = transform;
             aim.transform.parent = transform;
-            var t = aim.collider.gameObject.GetComponent<UseGravity>();
-            t.enabled = false;
-            Debug.Log(aim.collider.name);
+            aimPrev = aim;
+            //var t = aim.collider.gameObject.GetComponent<UseGravity>();
+            //t.enabled = false;
+            //Debug.Log(aim.collider.name);
         }
-        else if (aim.collider)
-            aim.transform.parent = null;
+        else
+        {
+            if (aimPrev.collider)
+            aimPrev.transform.parent = null;
+        }
     }
     private void MoveLeft()
     {
@@ -64,15 +65,7 @@ public class MovePlatform : MonoBehaviour
         else
             direction = false;
     }
-   /* private void OnCollisionEnter(Collision collision)
-    {
-        //if (collision.gameObject.tag == "Player")
-            collision.transform.parent = transform;
-    }
-    private void OnCollisionExit(Collision collision)
-    {
-        collision.transform.parent = null;
-    }*/
+
 
     void OnDrawGizmos()
     {
@@ -89,10 +82,10 @@ public class MovePlatform : MonoBehaviour
         //If there hasn't been a hit yet, draw the ray at the maximum distance
         else
         {
-            //Draw a Ray forward from GameObject toward the maximum distance
-            Gizmos.DrawRay(transform.position, transform.up * 0.1f);
+            //Draw a Ray up from GameObject toward the maximum distance
+            Gizmos.DrawRay(transform.position, transform.up * 0.2f);
             //Draw a cube at the maximum distance
-            Gizmos.DrawWireCube(transform.position + transform.up * 0.1f, transform.GetChild(0).localScale);
+            Gizmos.DrawWireCube(transform.position + transform.up * 0.2f, transform.GetChild(0).localScale);
         }
     }
 
