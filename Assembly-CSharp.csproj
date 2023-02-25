@@ -61,13 +61,14 @@
     <Compile Include="Assets\Scripts\test.cs" />
     <Compile Include="Assets\Scripts\Interactive.cs" />
     <Compile Include="Assets\Scripts\Loop_1.cs" />
+    <Compile Include="Assets\Scripts\UseGravity.cs" />
     <Compile Include="Assets\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\Properties.cs" />
     <Compile Include="Assets\Scripts\PlayerMove.cs" />
     <Compile Include="Assets\Scripts\MovePlatform.cs" />
     <Compile Include="Assets\Scripts\Rotation.cs" />
     <Compile Include="Assets\Scripts\LoopPosition.cs" />
-    <Compile Include="Assets\Scripts\UseGravity.cs" />
+    <Compile Include="Assets\Scripts\Door.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

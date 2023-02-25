@@ -230,6 +230,7 @@ GameObject:
   - component: {fileID: 206147101}
   - component: {fileID: 206147100}
   - component: {fileID: 206147099}
+  - component: {fileID: 206147102}
   m_Layer: 0
   m_Name: Cube (3)
   m_TagString: Untagged
@@ -313,6 +314,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 206147097}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &206147102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 206147097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3e323f7b0ce82c41ab4b247bdd1bd38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 613387074}
 --- !u!1 &240211512
 GameObject:
   m_ObjectHideFlags: 0
@@ -1301,6 +1315,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 613387073}
+  - component: {fileID: 613387074}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -1323,6 +1338,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &613387074
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 613387072}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 43c5a2449c2b07240a261bee3980e3da, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &613591573 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3097951012958328963, guid: 9540d73e528e6074d9319c407970e86e, type: 3}

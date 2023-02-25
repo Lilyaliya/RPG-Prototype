@@ -17,6 +17,7 @@ public class Interactive : MonoBehaviour
     private void Update()
     {
         Ray();
+        Interact();
         TestRay();
     }
 
@@ -36,6 +37,25 @@ public class Interactive : MonoBehaviour
         {
             Debug.DrawRay(ray.origin, ray.direction, color: Color.red);
             text.enabled = false;
+        }
+    }
+
+    void Interact()
+    {
+        if (obj.transform != null && obj.transform.GetComponent<Door>())
+        {
+            if (obj.transform.GetComponent<Door>().GetStatus())
+                text.text = "Œ“ –€“‹ (E)";
+            else
+                text.text = "«¿ –€“‹ (E)";
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                obj.transform.GetComponent<Door>().Open();
+            }
+        }
+        else
+        {
+            text.text = "¬«¿»ÃŒƒ≈…—“¬Œ¬¿“‹";
         }
     }
 }
