@@ -45,12 +45,20 @@ public class Interactive : MonoBehaviour
         if (obj.transform != null && obj.transform.GetComponent<Door>())
         {
             if (obj.transform.GetComponent<Door>().GetStatus())
-                text.text = "Œ“ –€“‹ (E)";
+                text.text = "Œ“ –€“‹ (K)";
             else
-                text.text = "«¿ –€“‹ (E)";
-            if (Input.GetKeyDown(KeyCode.E))
+                text.text = "«¿ –€“‹ (K)";
+            if (Input.GetKeyDown(KeyCode.K))
             {
                 obj.transform.GetComponent<Door>().Open();
+            }
+        }
+        else if (obj.transform != null && obj.collider.gameObject.tag == "Color") // we can take a color to the inventory
+        {
+            text.text = "¬«ﬂ“‹ (Q)";
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
+                gameObject.GetComponent<Inventory>().Add(obj.collider.gameObject);
             }
         }
         else
