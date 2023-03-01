@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Interactive : MonoBehaviour
 {
-    [SerializeField] Camera cam;
+    Camera cam;
     Ray ray;
     RaycastHit obj;
     [SerializeField] float maxDistance;

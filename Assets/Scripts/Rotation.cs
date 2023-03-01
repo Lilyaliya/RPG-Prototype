@@ -44,7 +44,7 @@ public class Rotation : MonoBehaviour
             mouseYCurr = Mathf.Clamp(mouseYCurr, -50f, 50f);
 
             cam.transform.rotation = Quaternion.Euler(-mouseYCurr, mouseXCurr, 0f);
-            gameObject.transform.rotation = Quaternion.Euler(0f, mouseXCurr, 0f);
+            gameObject.transform.rotation = Quaternion.Euler(0f, mouseXCurr, 0.0001f);
 
         }
     }

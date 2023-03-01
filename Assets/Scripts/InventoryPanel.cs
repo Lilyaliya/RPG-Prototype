@@ -6,11 +6,14 @@ using UnityEngine;
 public class InventoryPanel : MonoBehaviour
 {
     public GameObject invMenu;
+    GameObject player;
+    
     bool isInv = false;
     // Start is called before the first frame update
     void Start()
     {
         invMenu.SetActive(false);
+        player = GameObject.FindGameObjectWithTag("Player");
     }
     void ActivateCursor()
     {
@@ -37,11 +40,15 @@ public class InventoryPanel : MonoBehaviour
         if (isInv)
         {
             invMenu.SetActive(true);
+            player.GetComponent<Rotation>().enabled = false;
+            player.GetComponent<PlayerMove>().enabled = false;
             ActivateCursor();
         }
         else
         {
             invMenu.SetActive(false);
+            player.GetComponent<Rotation>().enabled = true;
+            player.GetComponent<PlayerMove>().enabled = true;
             DisableCursor();
 
         }
