@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class Inventory : MonoBehaviour
 {
     [SerializeField] List<GameObject> inventory;
+    public GameObject selectedItem;
+    [SerializeField] GameObject colouredArm;
     [SerializeField] int maxSize;
     [SerializeField] RectTransform element;
     [SerializeField] RectTransform content;
@@ -13,8 +15,9 @@ public class Inventory : MonoBehaviour
     {
         if (inventory.Count < maxSize && !inventory.Find(el=> el.name == item.name))
         {
+            
             inventory.Add(item);
-            FillContent(item.name);
+            FillContent(item);
         }
         else if (inventory.Count >= maxSize)
         {
@@ -33,7 +36,7 @@ public class Inventory : MonoBehaviour
             inventory.Remove(el);
         }
     }
-    void FillContent(string name)
+    void FillContent(GameObject item)
     {
         //RectTransform newEl = element;
         //newEl.GetComponentInChildren<Text>().text = name;
@@ -42,12 +45,28 @@ public class Inventory : MonoBehaviour
         {
             Destroy(child.gameObject);
         }*/
-        element.GetComponentInChildren<Text>().text = name;
+        element.GetComponentInChildren<Text>().text = item.name;
+        //element.GetComponent<Button>().onClick.AddListener(OnClick);
+        element.GetComponent<Button>().onClick.AddListener(delegate { OnItemSelected(element.gameObject); });
+        element.GetComponent<Image>().color = item.GetComponent<MeshRenderer>().material.color;
         var copy = Instantiate(element.gameObject) as GameObject;
         copy.transform.SetParent(content, false);
+        copy.GetComponent<Button>().onClick.AddListener(delegate { OnItemSelected(copy.gameObject); });
         content.anchoredPosition = new Vector2(0, -content.rect.width / 2);
         //element.GetComponentInChildren<Text>().text = name;
         //Instantiate(element, GameObject.FindWithTag("content").transform);
+    }
+    public void OnItemSelected(GameObject item)
+    {
+        selectedItem = item;
+        //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        //selectedItem.GetComponent<Button>().onClick.AddListener(OnClick);
+        colouredArm.GetComponent<MeshRenderer>().material.color = selectedItem.GetComponent<Image>().color;
+        
+    }
+    public void OnClick()
+    {
+
     }
     void RemoveComponent()
     {
