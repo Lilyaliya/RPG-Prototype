@@ -7,6 +7,8 @@ TagManager:
   - Color
   - content
   - Arm
+  - Ground
+  - mechanism
   layers:
   - Default
   - TransparentFX

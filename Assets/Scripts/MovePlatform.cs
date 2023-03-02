@@ -9,6 +9,7 @@ public class MovePlatform : MonoBehaviour
     [SerializeField] Transform startPoint;
     [SerializeField] Transform endPoint;
     [SerializeField] float speed = 1;
+    [HideInInspector] public bool activePlatform;
     BoxCollider _platform;
     bool _collision;
     RaycastHit aim;
@@ -37,6 +38,7 @@ public class MovePlatform : MonoBehaviour
         {
             //aim.collider.transform.parent = transform;
             aim.transform.parent = transform;
+            activePlatform = true; // turns true if the player on this platform
             aimPrev = aim;
             //var t = aim.collider.gameObject.GetComponent<UseGravity>();
             //t.enabled = false;
@@ -44,8 +46,9 @@ public class MovePlatform : MonoBehaviour
         }
         else
         {
-            if (aimPrev.collider)
-            aimPrev.transform.parent = null;
+            if (aimPrev.collider && activePlatform)
+                aimPrev.transform.parent = null;
+            activePlatform = false;
         }
     }
     private void MoveLeft()
