@@ -145,7 +145,11 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 284
+=======
+    width: 288.8
+>>>>>>> d2a673b (the player can color the items)
     height: 459.2
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
@@ -268,9 +272,15 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 284
     y: 0
     width: 955.19995
+=======
+    x: 288.8
+    y: 0
+    width: 950.39996
+>>>>>>> d2a673b (the player can color the items)
     height: 459.2
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
@@ -369,7 +379,11 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
+<<<<<<< HEAD
   m_LastSelectedObjectID: -25664
+=======
+  m_LastSelectedObjectID: 16030
+>>>>>>> d2a673b (the player can color the items)
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -390,9 +404,15 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 284
     y: 73.6
     width: 953.19995
+=======
+    x: 288.80002
+    y: 73.6
+    width: 948.39996
+>>>>>>> d2a673b (the player can color the items)
     height: 438.2
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
@@ -401,7 +421,11 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
+<<<<<<< HEAD
   m_TargetSize: {x: 1191.5, y: 521.5}
+=======
+  m_TargetSize: {x: 1185.5, y: 521.5}
+>>>>>>> d2a673b (the player can color the items)
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -416,8 +440,13 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
+<<<<<<< HEAD
     m_HBaseRangeMin: -476.6
     m_HBaseRangeMax: 476.6
+=======
+    m_HBaseRangeMin: -474.2
+    m_HBaseRangeMax: 474.2
+>>>>>>> d2a673b (the player can color the items)
     m_VBaseRangeMin: -208.6
     m_VBaseRangeMax: 208.6
     m_HAllowExceedBaseRangeMin: 1
@@ -437,16 +466,24 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
+<<<<<<< HEAD
       width: 953.19995
       height: 417.2
     m_Scale: {x: 0.99999994, y: 0.99999994}
     m_Translation: {x: 476.59998, y: 208.6}
+=======
+      width: 948.39996
+      height: 417.2
+    m_Scale: {x: 0.99999994, y: 0.99999994}
+    m_Translation: {x: 474.19998, y: 208.6}
+>>>>>>> d2a673b (the player can color the items)
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
       x: -476.6
       y: -208.60002
       width: 953.2
@@ -454,6 +491,15 @@ MonoBehaviour:
     m_MinimalGUI: 1
   m_defaultScale: 0.99999994
   m_LastWindowPixelSize: {x: 1191.5, y: 547.75}
+=======
+      x: -474.2
+      y: -208.60002
+      width: 948.4
+      height: 417.20004
+    m_MinimalGUI: 1
+  m_defaultScale: 0.99999994
+  m_LastWindowPixelSize: {x: 1185.5, y: 547.75}
+>>>>>>> d2a673b (the player can color the items)
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 00000000000000000000
@@ -481,15 +527,25 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73.6
+<<<<<<< HEAD
     width: 283
+=======
+    width: 287.8
+>>>>>>> d2a673b (the player can color the items)
     height: 438.2
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
       m_SelectedIDs: 
       m_LastClickedID: 0
       m_ExpandedIDs: 6cfbffff
+=======
+      m_SelectedIDs: e83e0000
+      m_LastClickedID: 16104
+      m_ExpandedIDs: 56fbffff6cfbffff743e0000f23e0000823f0000
+>>>>>>> d2a673b (the player can color the items)
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -533,9 +589,15 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 284
     y: 73.6
     width: 953.19995
+=======
+    x: 288.80002
+    y: 73.6
+    width: 948.39996
+>>>>>>> d2a673b (the player can color the items)
     height: 438.2
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
@@ -549,9 +611,15 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: 44.040916, y: 2.489771, z: 30.727621}
     speed: 2
     m_Value: {x: 44.040916, y: 2.489771, z: 30.727621}
+=======
+    m_Target: {x: 39.938404, y: 0.5773821, z: 25.019808}
+    speed: 2
+    m_Value: {x: 39.938404, y: 0.5773821, z: 25.019808}
+>>>>>>> d2a673b (the player can color the items)
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -598,6 +666,7 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
+<<<<<<< HEAD
     m_Target: {x: 0.26004916, y: 0.29664305, z: -0.08430532, w: 0.91502535}
     speed: 2
     m_Value: {x: 0.260049, y: 0.29664284, z: -0.084305264, w: 0.9150247}
@@ -605,6 +674,15 @@ MonoBehaviour:
     m_Target: 14.051026
     speed: 2
     m_Value: 14.051026
+=======
+    m_Target: {x: 0.519438, y: 0.21876268, z: -0.13957529, w: 0.8141583}
+    speed: 2
+    m_Value: {x: 0.5180047, y: 0.22019306, z: -0.14002359, w: 0.8146039}
+  m_Size:
+    m_Target: 7.2165885
+    speed: 2
+    m_Value: 7.2165885
+>>>>>>> d2a673b (the player can color the items)
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -667,21 +745,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Prefabs
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 65
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Prefabs
   m_LastFoldersGridSize: 65
   m_LastProjectPath: X:\Admin\UnityProjects\Test
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 88400000
-    m_LastClickedID: 16520
+    m_SelectedIDs: 84400000
+    m_LastClickedID: 16516
     m_ExpandedIDs: 000000007c40000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -737,7 +815,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c62300009e440000d64800004e4b00005e4a0000fc6b00001c4d0000ae4d0000124b0000484a0000e24a0000ca4a0000865a000050480000f6400000a46d00000a7e000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0

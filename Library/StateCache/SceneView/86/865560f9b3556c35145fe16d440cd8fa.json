@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"m_AlwaysRefresh":false,"showFog":true,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true,"showVisualEffectGraphs":true,"m_FxEnabled":true},"in2DMode":false,"pivot":{"x":44.040916442871097,"y":2.4897708892822267,"z":30.72762107849121},"rotation":{"x":0.26004916429519656,"y":0.29664304852485659,"z":-0.08430532366037369,"w":0.9150253534317017},"size":14.051026344299317,"orthographic":true}
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"m_AlwaysRefresh":false,"showFog":true,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true,"showVisualEffectGraphs":true,"m_FxEnabled":true},"in2DMode":false,"pivot":{"x":39.93840408325195,"y":0.5773820877075195,"z":25.019807815551759},"rotation":{"x":0.5194380283355713,"y":0.21876268088817597,"z":-0.1395752876996994,"w":0.8141583204269409},"size":7.216588497161865,"orthographic":false}
+>>>>>>> d2a673b (the player can color the items)
