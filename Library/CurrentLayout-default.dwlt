@@ -145,7 +145,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 405.6
+    width: 288.8
     height: 459.2
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
@@ -268,9 +268,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 405.6
+    x: 288.8
     y: 0
-    width: 833.6
+    width: 950.39996
     height: 459.2
   m_MinSize: {x: 102, y: 121}
   m_MaxSize: {x: 4002, y: 4021}
@@ -369,7 +369,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -1174
+  m_LastSelectedObjectID: 16030
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -390,9 +390,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 405.6
+    x: 288.80002
     y: 73.6
-    width: 831.6
+    width: 948.39996
     height: 438.2
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
@@ -401,7 +401,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 1039.5, y: 521.5}
+  m_TargetSize: {x: 1185.5, y: 521.5}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -416,8 +416,8 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -415.80002
-    m_HBaseRangeMax: 415.80002
+    m_HBaseRangeMin: -474.2
+    m_HBaseRangeMax: 474.2
     m_VBaseRangeMin: -208.6
     m_VBaseRangeMax: 208.6
     m_HAllowExceedBaseRangeMin: 1
@@ -428,7 +428,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -437,23 +437,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 831.6
+      width: 948.39996
       height: 417.2
     m_Scale: {x: 0.99999994, y: 0.99999994}
-    m_Translation: {x: 415.8, y: 208.6}
+    m_Translation: {x: 474.19998, y: 208.6}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -415.80002
+      x: -474.2
       y: -208.60002
-      width: 831.60004
+      width: 948.4
       height: 417.20004
     m_MinimalGUI: 1
   m_defaultScale: 0.99999994
-  m_LastWindowPixelSize: {x: 1039.5, y: 547.75}
+  m_LastWindowPixelSize: {x: 1185.5, y: 547.75}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 00000000000000000000
@@ -481,22 +481,15 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73.6
-    width: 404.6
+    width: 287.8
     height: 438.2
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-<<<<<<< HEAD
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: f23e0000
       m_LastClickedID: 16114
       m_ExpandedIDs: 6cfbfffff23e0000
-=======
-      scrollPos: {x: 0, y: 46.799988}
-      m_SelectedIDs: 6afbffff
-      m_LastClickedID: -1174
-      m_ExpandedIDs: 6cfbffff743e0000f23e0000723f0000823f0000
->>>>>>> parent of d2a673b (the player can color the items)
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -540,9 +533,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 405.6
+    x: 288.80002
     y: 73.6
-    width: 831.6
+    width: 948.39996
     height: 438.2
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
@@ -556,15 +549,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-<<<<<<< HEAD
     m_Target: {x: 36.5354, y: -0.3325138, z: 24.728024}
     speed: 2
     m_Value: {x: 36.5354, y: -0.3325138, z: 24.728024}
-=======
-    m_Target: {x: 39.424446, y: 2.762028, z: 24.242111}
-    speed: 2
-    m_Value: {x: 39.424446, y: 2.762028, z: 24.242111}
->>>>>>> parent of d2a673b (the player can color the items)
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -611,17 +598,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.07917674, y: 0.55341834, z: -0.052955594, w: 0.8274402}
+    m_Target: {x: 0.519438, y: 0.21876268, z: -0.13957529, w: 0.8141583}
     speed: 2
-<<<<<<< HEAD
     m_Value: {x: 0.519436, y: 0.21876182, z: -0.13957474, w: 0.8141551}
-=======
-    m_Value: {x: 0.07909712, y: 0.55465823, z: -0.053074237, w: 0.8266081}
->>>>>>> parent of d2a673b (the player can color the items)
   m_Size:
-    m_Target: 6.3832097
+    m_Target: 7.2165885
     speed: 2
-    m_Value: 6.3832097
+    m_Value: 7.2165885
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -684,21 +667,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Prefabs
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 65
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Prefabs
   m_LastFoldersGridSize: 65
   m_LastProjectPath: X:\Admin\UnityProjects\Test
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 88400000
-    m_LastClickedID: 16520
+    m_SelectedIDs: 84400000
+    m_LastClickedID: 16516
     m_ExpandedIDs: 000000007c40000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0

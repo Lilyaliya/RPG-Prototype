@@ -9,6 +9,7 @@ public class Interactive : MonoBehaviour
     Ray ray;
     RaycastHit obj;
     [SerializeField] float maxDistance;
+    [SerializeField] KeyCode onDrawButton;
     [SerializeField] Text text;
     private void Start()
     {
@@ -61,9 +62,13 @@ public class Interactive : MonoBehaviour
                 gameObject.GetComponent<Inventory>().Add(obj.collider.gameObject);
             }
         }
-        else
+        else if (obj.transform != null && obj.collider.gameObject.tag != "mechanism" && obj.collider.gameObject.tag != "Ground")
         {
-            text.text = "¬«¿»ÃŒƒ≈…—“¬Œ¬¿“‹";
+            text.text = "œŒ –¿—»“‹ "+ onDrawButton.ToString();
+            if (Input.GetKeyDown(onDrawButton))
+            {
+                obj.collider.gameObject.GetComponent<MeshRenderer>().material.color = GameObject.FindGameObjectWithTag("Arm").GetComponent<MeshRenderer>().material.color;
+            }
         }
     }
 }
