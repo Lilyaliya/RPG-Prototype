@@ -54,8 +54,11 @@ public class MovePlatform : MonoBehaviour
     private void MoveLeft()
     {
         float step = speed * Time.deltaTime;
-        if (transform.position.x > startPoint.position.x)
-            transform.Translate(-step, 0, 0);
+        var temp = Vector3.Magnitude(transform.position - startPoint.position);
+        if (temp > step)
+            transform.position = Vector3.MoveTowards(transform.position, startPoint.position, step);
+        //if (transform.position.x > startPoint.position.x)
+        //    transform.Translate(-step, 0, 0);
         else
             direction = true;
     }
@@ -63,8 +66,12 @@ public class MovePlatform : MonoBehaviour
     private void MoveRight()
     {
         float step = speed * Time.deltaTime;
-        if (transform.position.x < endPoint.position.x)
-            transform.Translate(step, 0, 0);
+        var temp = Vector3.Magnitude(transform.position - endPoint.position);
+        if (temp > step)
+            transform.position = Vector3.MoveTowards(transform.position, endPoint.position, step);
+
+        //if (transform.position.x < endPoint.position.x)
+        //    transform.Translate(step, 0, 0);
         else
             direction = false;
     }
