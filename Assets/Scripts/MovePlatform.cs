@@ -33,7 +33,7 @@ public class MovePlatform : MonoBehaviour
         {
             MoveLeft();
         }
-        _collision = Physics.BoxCast(_platform.bounds.center, transform.GetChild(0).localScale, transform.up, out aim, transform.rotation, 0.1f);
+        _collision = Physics.BoxCast(_platform.bounds.center, transform.GetChild(0).localScale, transform.up, out aim, transform.rotation, 0.2f);
         if (_collision)
         {
             //aim.collider.transform.parent = transform;
@@ -54,10 +54,8 @@ public class MovePlatform : MonoBehaviour
     private void MoveLeft()
     {
         float step = speed * Time.deltaTime;
-        var temp = Vector3.Magnitude(transform.position - startPoint.position);
-        if (temp > step)
-            transform.position = Vector3.MoveTowards(transform.position, startPoint.position, step);
-        //transform.Translate(-step * (transform.position - startPoint.position));
+        if (transform.position.x > startPoint.position.x)
+            transform.Translate(-step, 0, 0);
         else
             direction = true;
     }
@@ -65,12 +63,8 @@ public class MovePlatform : MonoBehaviour
     private void MoveRight()
     {
         float step = speed * Time.deltaTime;
-        var temp = Vector3.Magnitude(transform.position - endPoint.position);
-        if (temp > step)
-            transform.position = Vector3.MoveTowards(transform.position, endPoint.position, step);
-        //transform.Translate(step,0,0);
-        //if (transform.position.x < endPoint.position.x)
-        //    transform.Translate(step, 0, 0);
+        if (transform.position.x < endPoint.position.x)
+            transform.Translate(step, 0, 0);
         else
             direction = false;
     }
@@ -92,9 +86,9 @@ public class MovePlatform : MonoBehaviour
         else
         {
             //Draw a Ray up from GameObject toward the maximum distance
-            Gizmos.DrawRay(transform.position, transform.up * 0.1f);
+            Gizmos.DrawRay(transform.position, transform.up * 0.2f);
             //Draw a cube at the maximum distance
-            Gizmos.DrawWireCube(transform.position + transform.up * 0.1f, transform.GetChild(0).localScale);
+            Gizmos.DrawWireCube(transform.position + transform.up * 0.2f, transform.GetChild(0).localScale);
         }
     }
 
