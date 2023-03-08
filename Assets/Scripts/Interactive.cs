@@ -64,11 +64,13 @@ public class Interactive : MonoBehaviour
         }
         else if (obj.transform != null && obj.collider.gameObject.tag != "mechanism" && obj.collider.gameObject.tag != "Ground")
         {
-            text.text = "ÏÎÊĞÀÑÈÒÜ "+ onDrawButton.ToString();
+            text.text = "ÏÎÊĞÀÑÈÒÜ " + onDrawButton.ToString();
             if (Input.GetKeyDown(onDrawButton))
             {
                 obj.collider.gameObject.GetComponent<MeshRenderer>().material.color = GameObject.FindGameObjectWithTag("Arm").GetComponent<MeshRenderer>().material.color;
             }
         }
+        else
+            text.text = "ÂÇÀÈÌÎÄÅÉÑÒÂÎÂÀÒÜ";
     }
 }
